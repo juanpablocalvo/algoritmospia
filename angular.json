@@ -61,8 +61,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "avuanl:build",
-            "browserTarget": ""
+            "browserTarget": "avuanl:build"
           },
           "configurations": {
             "production": {
