@@ -1,0 +1,27 @@
+.parallax-content h1{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+}
+
+.parallax-content p{
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.header h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.header h2{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+body {
+    background-image: url("../../assets/img/banner_bg.jpeg");
+    background-color: #cccccc;
+   }

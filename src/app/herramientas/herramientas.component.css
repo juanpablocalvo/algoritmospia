@@ -1,0 +1,10 @@
+.primary-blue-button button{
+    background-color: darkcyan;
+    color: white;
+    padding: 4px;
+    border: black;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    width: 30%;
+}

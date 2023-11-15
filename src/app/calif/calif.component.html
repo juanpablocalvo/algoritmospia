@@ -1,0 +1,97 @@
+<body>
+<div class="container-calif">
+    <div class="Instrucciones"><h1>Calculadora de Promedios</h1>
+        <p>INSTRUCCIONES DE USO:<br>
+            1- Ubica las diferentes casillas en este apartado, las cuales podrás llenar únicamente con
+            números enteros positivos.<br>
+            2- Las casillas de "Calificaciones" se refieren al puntaje obtenido en tu examen (Ej. Sacaste un 85 en tu examen de Algoritmos Computacionales).<br>
+            3- Las casillas de "Valor de examen / tareas" se refieren al valor que tienen en tu promedio final (Ej. Mis examenes valen 20 puntos
+            cada uno, y mis tareas valen 12 puntos cada una, lo que me da en total los 100 puntos posibles del curso).<br>
+            <span>OJO: NO COLOQUES EL VALOR DE TUS TAREAS CON PUNTO DECIMAL</span>, esta calculadora hace TODO el procedimiento para obtener tu promedio
+            de forma automática, solo preocúpate por introducir correctamente los datos.<br>
+            4- Si aún no conoces alguna calificación, te recomendamos usar nuestra <button (click)="navegarCalcupred()">Calculadora predictiva</button><br>
+            5- Si solamente deseas conocer tu promedio actual, deja en blanco el recuadro de la calificación que no conozcas, PERO RECUERDA
+            ASIGNAR EL VALOR DE DICHA ACTIVIDAD / EXAMEN.<br>
+            6- ¡Presiona el botón "Consultar promedio" y listo! Ya tienes tu promedio en tan solo unos segundos:)
+        </p>
+    </div>
+    
+    <div class="Promedios">
+        <h3>Apartado de Examenes</h3><br>
+    <span>Calificación de tu examen Medio Curso</span><input type="number" class="form-control" id="ex1" style="float:right" [(ngModel)]="ex1">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu examen Medio Curso</span><input type="number" class="form-control" id="valex1" style="float:right" [(ngModel)]="valex1">
+    <br>
+    <br>
+    <br>
+    <span>Calificación de tu examen Ordinario</span><input type="number" class="form-control" id="ex2" style="float:right" [(ngModel)]="ex2">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu examen Ordinario</span><input type="number" class="form-control" id="valex2" style="float:right" [(ngModel)]="valex2">
+    <br>
+    <br>
+    <br>
+    </div>
+    
+    
+    <div class="Promedios2">
+    <h3>Apartado de tareas</h3><br>
+    
+    <span>Calificación de tu tarea 1</span><input type="number" class="form-control" id="tar1" style="float:right" [(ngModel)]="tar1">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu tarea</span><input type="number" class="form-control" id="valtar1" style="float:right" [(ngModel)]="valtar1">
+    <br>
+    <br>
+    <br>
+    <span>Calificación de tu tarea 2</span><input type="number" class="form-control" id="tar2" style="float:right" [(ngModel)]="tar2">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu tarea</span><input type="number" class="form-control" id="valtar2" style="float:right" [(ngModel)]="valtar2">
+    <br>
+    <br>
+    <br>
+    <span>Calificación de tu tarea 3</span><input type="number" class="form-control" id="tar3" style="float:right" [(ngModel)]="tar3">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu tarea</span><input type="number" class="form-control" id="valtar3" style="float:right" [(ngModel)]="valtar3">
+    <br>
+    <br>
+    <br>
+    <span>Calificación de tu tarea 4</span><input type="number" class="form-control" id="tar4" style="float:right" [(ngModel)]="tar4">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu tarea</span><input type="number" class="form-control" id="valtar4" style="float:right" [(ngModel)]="valtar4">
+    <br>
+    <br>
+    <br>
+    <span>Calificación de tu tarea 5</span><input type="number" class="form-control" id="tar5" style="float:right" [(ngModel)]="tar5">
+    <br>
+    <br>
+    <br>
+    <span>Valor de tu tarea</span><input type="number" class="form-control" id="valtar5" style="float:right" [(ngModel)]="valtar5">
+    <br>
+    <br>
+    </div>
+    
+    <div class="boton"><br>
+    <button class="btn btn-primary" (click)="Operacion()">Consultar promedio</button> 
+    </div>
+    
+    <div class="Resultados">
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="textooo">Tu promedio es de</p><h3 align="center"> {{ califinal }}</h3>
+    <br>
+    </div> 
+    </div>
+</body>

@@ -1,0 +1,125 @@
+/* Esto es para el menu desplegable*/
+
+#menu{
+  width: 100%;
+  
+}
+#menu ul li {
+    background-color:#2e518b;
+
+}
+
+#menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+
+}
+
+#menu ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  width: 230px;
+  height: 40px;
+}
+
+#menu ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+
+/*Aqui un inteento facha*/
+#menu ul li:hover{
+    background: green;
+    color: black;
+    
+    
+  }
+
+
+
+
+
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+#menu ul ul li {
+  float:none;
+  width:150px
+}
+
+#menu ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+#menu ul li:hover > ul {
+  display:block;
+  background: gray;
+}
+
+h2{
+  color:red;
+}
+
+
+.boton{
+  float: left;
+  position: absolute;
+  margin-left: 30%;
+  
+  
+}
+
+
+/* Esto es para ocultar las flechitas de incremento/decremento en los inputs */
+.Promedios input[type=number]::-webkit-inner-spin-button,
+.Promedios input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+.Promedios input[type=number] { -moz-appearance:textfield; }
+
+
+.Promedios {
+  font: 115% Arial, Helvetica, sans-serif;
+  width: 25%;
+  padding: 16px;
+  margin: 10px auto;
+  background: #f7f7f9;
+  float: left;
+}
+
+.Promedios input[type="number"] {
+
+  transition: all 0,30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1%;
+  border: 3px solid #ccc;
+  padding: 1%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+}
+.Promedios input[type="number"] form-control{
+
+  background: blue;
+}

@@ -1,0 +1,83 @@
+<div class="Global"><h1>Calculadora Predictiva de Promedio</h1>
+    <div class="Objetivo">
+<span>Objetivo:</span><input type="number" class="form-control" id="objetivo" style="float:right" [(ngModel)]="objetivo"><br><br>
+</div>
+<div class="container-promedios">
+            <h3>Apartado de Examenes</h3>
+    <br>
+            <span>Calificación de tu examen Medio Curso</span><input type="number" class="form-control" id="predex1" style="float:right" [(ngModel)]="predex1">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu examen Medio Curso</span><input type="number" class="form-control" id="predvalex1" style="float:right" [(ngModel)]="predvalex1">
+    <br>
+    <br>
+    <br>
+            <span>Calificación de tu examen Ordinario</span><input type="number" class="form-control" id="predex2" style="float:right" [(ngModel)]="predex2">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu examen Ordinario</span><input type="number" class="form-control" id="predvalex2" style="float:right" [(ngModel)]="predvalex2">
+    <br>
+    <br>
+    <br>
+    <div class="botonpred"><br>
+        <button class="btn btn-tres" (click)="Predictiva()">Consultar promedio</button> 
+    </div>
+</div>
+
+<div class="container-promedios2">
+<h3>Apartado de tareas</h3><br>
+            <span>Calificación de tu tarea 1</span><input type="number" class="form-control" id="predtar1" style="float:right" [(ngModel)]="predtar1">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu tarea</span><input type="number" class="form-control" id="predvaltar1" style="float:right" [(ngModel)]="predvaltar1">
+    <br>
+    <br>
+    <br>
+            <span>Calificación de tu tarea 2</span><input type="number" class="form-control" id="predtar2" style="float:right" [(ngModel)]="predtar2">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu tarea</span><input type="number" class="form-control" id="predvaltar2" style="float:right" [(ngModel)]="predvaltar2">
+    <br>
+    <br>
+    <br>
+            <span>Calificación de tu tarea 3</span><input type="number" class="form-control" id="predtar3" style="float:right" [(ngModel)]="predtar3">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu tarea</span><input type="number" class="form-control" id="predvaltar3" style="float:right" [(ngModel)]="predvaltar3">
+    <br>
+    <br>
+    <br>
+            <span>Calificación de tu tarea 4</span><input type="number" class="form-control" id="predtar4" style="float:right" [(ngModel)]="predtar4">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu tarea</span><input type="number" class="form-control" id="predvaltar4" style="float:right" [(ngModel)]="predvaltar4">
+    <br>
+    <br>
+    <br>
+            <span>Calificación de tu tarea 5</span><input type="number" class="form-control" id="predtar5" style="float:right" [(ngModel)]="predtar5">
+    <br>
+    <br>
+    <br>
+            <span>Valor de tu tarea</span><input type="number" class="form-control" id="predvaltar5" style="float:right" [(ngModel)]="predvaltar5">
+    <br>
+    <br>
+</div>
+<br><br><br><br><br>    
+</div>
+<div class="Results">
+Tu promedio es de {{predicalifinal}}<br><br>
+
+¡Aún puedes obtener {{ parallegarvalor2 }} puntos!<br><br>
+
+{{ aviso }} {{ resultaviso }} {{ aviso2 }}<br><br>
+
+{{ aviso3 }} {{ resultexito }} {{ aviso4 }}<br><br>
+
+{{ nopasas }}
+</div>
